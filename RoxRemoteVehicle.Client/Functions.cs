@@ -34,12 +34,10 @@ namespace RoxRemoteVehicle.Client
 
         public bool LostConnectionToRC { get; set; } = false;
 
-        public int ControllerObj = 0;
+        public static int ControllerObj = 0;
 
         public async void OnRCVehicleEnable()
         {
-            Debug.WriteLine("RoxRemoteVehicle Enabled");
-
             uint RCSpawnHash = (uint)GetHashKey(SelectedVehicleModel);
 
             if (!IsModelAVehicle(RCSpawnHash)) return;
@@ -188,12 +186,11 @@ namespace RoxRemoteVehicle.Client
             Game.Player.Character.Task.PlayAnimation("stand_controller@dad", "stand_controller_clip", 3.0f, -1, AnimationFlags.Loop | (AnimationFlags)51);
         }
 
-        public async void StopRemoteControlAnimation()
+        public void StopRemoteControlAnimation()
         {
             Game.Player.Character.Task.ClearAnimation("stand_controller@dad", "stand_controller_clip");
 
-            await Delay(1000);
-
+            SetEntityAsMissionEntity(ControllerObj, false, false);
             DeleteEntity(ref ControllerObj);
         }
 
@@ -220,8 +217,6 @@ namespace RoxRemoteVehicle.Client
 
         public void OnRCVehicleDisable()
         {
-            Debug.WriteLine("RoxRemoteVehicle Disabled");
-
             SwitchControls(Controls.Player);
 
             if (RCVehicle.List.Controls == Controls.RemoteControl)
@@ -441,11 +436,11 @@ namespace RoxRemoteVehicle.Client
 
             if (action == "down")
             {
-                AddTextComponentScaleform("Place Down RC Vehicle");
+                AddTextComponentScaleform("Place Down RC");
             }
             else if (action == "up")
             {
-                AddTextComponentScaleform("Pick Up RC Vehicle");
+                AddTextComponentScaleform("Pick Up RC");
             }
 
             EndTextCommandScaleformString();
