@@ -1,5 +1,8 @@
 # RoxRemoteVehicle
 
+## About
+This is an RC Vehicle script, where you and your friends can spawn in RC vehicles and remotely drive them around the place, but be careful as the signal can cut out of range! :eyes: 
+
 ## Features
   - Ability to add other vehicles to the config (best if the vehicles are scaled down in the model itself, they are not scaled down in the code)
   - Ability to toggle the RC screen effects in the config
