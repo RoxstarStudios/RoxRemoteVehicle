@@ -1,0 +1,5 @@
+E:\Golden Development\Roxstar Studios\FiveM Resources\RoxRemoteVehicle\Build\RoxRemoteVehicle.Client.net.dll
+E:\Golden Development\Roxstar Studios\FiveM Resources\RoxRemoteVehicle\RoxRemoteVehicle.Client\obj\Debug\RoxRemoteVehicle.Client.csproj.AssemblyReference.cache
+E:\Golden Development\Roxstar Studios\FiveM Resources\RoxRemoteVehicle\RoxRemoteVehicle.Client\obj\Debug\RoxRemoteVehicle.Client.csproj.CoreCompileInputs.cache
+E:\Golden Development\Roxstar Studios\FiveM Resources\RoxRemoteVehicle\RoxRemoteVehicle.Client\obj\Debug\RoxRemot.20A77821.Up2Date
+E:\Golden Development\Roxstar Studios\FiveM Resources\RoxRemoteVehicle\RoxRemoteVehicle.Client\obj\Debug\RoxRemoteVehicle.Client.net.dll

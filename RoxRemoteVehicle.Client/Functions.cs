@@ -12,7 +12,6 @@ using System.Threading.Tasks;
 
 using static CitizenFX.Core.Native.API;
 using static CitizenFX.Core.UI.Screen;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace RoxRemoteVehicle.Client
 {
