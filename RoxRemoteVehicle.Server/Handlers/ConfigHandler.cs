@@ -13,7 +13,6 @@ using static CitizenFX.Core.Native.API;
 using RoxRemoteVehicle.Server.Models;
 using System.Xml.Linq;
 using System.Collections.Specialized;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace RoxRemoteVehicle.Server.Handlers
 {
